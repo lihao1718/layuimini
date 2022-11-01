@@ -1,0 +1,46 @@
+
+		<div style="margin: 15px;">
+			<form class="layui-form" action="" id="create_table_from" lay-filter="create_table_from">
+				<div class="layui-form-item">
+					<label class="layui-form-label">名称</label>
+					<div class="layui-input-block">
+							<input type="text" name="name" lay-verify="required" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">是否启用</label>
+					<div class="layui-input-block">
+					<select  id="enabled" name="enabled">
+						<option value=""></option>
+						<option value="true">启用</option>
+						<option value="false">禁用</option>
+					</select>
+					</div>
+				</div>
+				<div class="layui-form-item" id="pwd">
+					<label class="layui-form-label">级别</label>
+					<div class="layui-input-block">
+						<input type="text" name="level" lay-verify="required" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">类型</label>
+					<div class="layui-input-block">
+						<select  id="type" name="type" >
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+<!--				<div class="layui-form-item">-->
+<!--					<label class="layui-form-label">类型</label>-->
+<!--					<div class="layui-input-block">-->
+<!--						<select id="type" name="type" lay-verify="required">-->
+<!--							<option value="">请选择角色</option>-->
+<!--						</select>-->
+<!--					</div>-->
+<!--				</div>-->
+
+
+				<button lay-filter="edit" lay-submit style="display: none;"></button>
+			</form>
+		</div>
